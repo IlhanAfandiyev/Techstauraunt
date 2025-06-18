@@ -1,0 +1,189 @@
+.Navbar {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    background-color: white;
+}
+
+.left img {
+    width: 50px;
+    height: auto;
+}
+
+.left h3 {
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.middle li {
+    display: flex;
+    gap: 15px;
+    font-family: monospace;
+    font-size: 15px;
+    flex-wrap: wrap;
+}
+
+.middle a {
+    position: relative;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+.middle a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.4s ease, left 0.4s ease;
+}
+
+.middle a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.right {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.right img{
+    width: 30px;
+    display: none;
+}
+
+.right .LoginButton {
+    background-color: black;
+    color: white;
+    width: 60px;
+    height: 35px;
+    border-radius: 4px;
+    font-family: monospace;
+    border: 2px solid black;
+    transition: 0.3s;
+}
+
+.right .LoginButton:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.right .RegisterButton {
+    background-color: black;
+    color: white;
+    width: 80px;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-family: monospace;
+    transition: 0.3s;
+}
+
+.right .RegisterButton:hover {
+    background-color: transparent;
+    color: black;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .Navbar {
+        padding: 15px;
+    }
+
+    .middle li {
+        display: none;
+    }
+
+    .right {
+        margin-top: 10px;
+    }
+     .right img{
+        display: initial;
+    }
+    .right .LoginButton,
+    .right .RegisterButton {
+        display: none;
+    }
+
+    .left h3 {
+        font-size: 18px;
+    }
+
+    .middle a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .left img {
+        width: 40px;
+    }
+   
+}
+.SidebarOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent; /* no gray */
+  z-index: 90;
+  display: none;
+}
+
+.SidebarOverlay.Show {
+  display: block;
+}
+
+
+.SlideSidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 220px;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  padding: 30px 20px;
+  font-family: monospace;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.5s ease forwards;
+  z-index: 100;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+.BurgerIcon {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+.swal-font {
+  font-family: monospace !important;
+}
+
+.swal-button {
+  color: black !important;
+  font-family: monospace !important;
+}
