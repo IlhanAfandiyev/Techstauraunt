@@ -1,11 +1,10 @@
 import MainLayout from '../Components/MainLayout';
 import Home from '../Pages/Home';
 import NotFound from '../Pages/NotFound';
+import Restaurant from '../Pages/Restaurant';
 
 
-const id = ":id";
-const token = ":token"
-const conversationId = ":conversationId";
+
 
 export const ROUTES = [
     {
@@ -19,8 +18,11 @@ export const ROUTES = [
             {
                 path:'*',
                 element: <NotFound/>
+            },
+          {
+                path:'/restaurant',
+                element: <Restaurant/>
             }
-          
         ]
     }
 ];

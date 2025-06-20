@@ -1,8 +1,11 @@
 import React from 'react'
+import HomeMain from './Parts/Main'
 
 const Home = () => {
   return (
-    <div className='container'>Home</div>
+    <div>
+      <HomeMain/>
+    </div>
   )
 }
 

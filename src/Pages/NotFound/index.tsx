@@ -12,7 +12,7 @@ const NotFound = () => {
         onClick={() => navigate("/")}
         className="border-2 border-white text-white px-6 py-2 rounded hover:bg-white hover:text-black transition-colors duration-300"
       >
-        Go to Home
+        Go to Home Page
       </button>
     </div>
   )
