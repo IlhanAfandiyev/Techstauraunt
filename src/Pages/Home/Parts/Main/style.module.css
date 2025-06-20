@@ -61,3 +61,41 @@
 .imageContainer:hover p {
   opacity: 0;
 }
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  font-family: monospace;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.modalText {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.modalButton {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
