@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import style from "./style.module.css"
-import Doner from "../../../../assets/imgs/beautiful-traditional-turkish-doner-cooked-in-a-hot-fire-video.jpg"
+import Doner from "../../../../assets/imgs/XL.webp"
 import { useNavigate } from 'react-router-dom'
 
 const HomeMain = () => {
