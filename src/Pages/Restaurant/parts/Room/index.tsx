@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import style from "./style.module.css"
 import Resarvation from '../ReservationForm'
 
@@ -40,7 +40,7 @@ const Room = () => {
   }
 
   return (
-    <div className="container">
+    <div className="container mb-[20%]">
       <h1 className={style.pageTitle}>Available Rooms</h1>
       <div className={style.tableWrapper}>
         <table className={style.table}>
