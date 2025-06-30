@@ -34,40 +34,29 @@ const HomeMain = () => {
       </div>
 
       {/* 🔽 Ad Block */}
-    <div className={style.Ad}> <div className="max-w-3xl mx-auto mt-12 bg-black text-white font-mono p-6 rounded-md shadow-md flex  sm:flex-row items-center gap-6">
-  <img
-    src="https://cdn-icons-png.flaticon.com/512/3595/3595455.png"
-    alt="Ad Banner"
-    className="w-28 h-28 object-contain"
-  />
-  <div className="text-center sm:text-left">
-    <h2 className="text-2xl font-bold mb-2">Hungry?</h2>
-    <p className="text-sm mb-4">Order now and get your food delivered fresh & fast from Techstaurant.</p>
+    <div className={style.Ad}> <div className="w-full max-w-5xl mx-auto mt-16 bg-black text-white font-mono rounded-xl overflow-hidden shadow-lg flex flex-col lg:flex-row items-center lg:items-stretch">
+  <div className="w-full lg:w-1/2 h-52 lg:h-auto flex items-center justify-center bg-white">
+    <img
+      src="https://cdn-icons-png.flaticon.com/512/3595/3595455.png"
+      alt="Ad Banner"
+      className="w-32 h-32 object-contain"
+    />
+  </div>
+  <div className="w-full lg:w-1/2 p-8 flex flex-col justify-center items-center lg:items-start text-center lg:text-left space-y-4">
+    <h2 className="text-3xl font-bold uppercase tracking-wider">Feeling Hungry?</h2>
+    <p className="text-sm lg:text-base leading-relaxed">
+      Discover the best local restaurants and get your meals delivered hot and fast. Techstaurant connects you with taste and convenience in one click.
+    </p>
     <button
       onClick={() => navigate('/')}
-      className="bg-white text-black px-4 py-2 border-2 border-white hover:bg-transparent hover:text-white transition"
+      className="mt-2 px-6 py-2 bg-white text-black border border-white hover:bg-transparent hover:text-white transition-all duration-300"
     >
       Start Exploring
     </button>
   </div>
 </div>
-<div className="max-w-3xl mx-auto mt-12 bg-black text-white font-mono p-6 rounded-md shadow-md flex flex-col sm:flex-row items-center gap-6">
-  <img
-    src="https://cdn-icons-png.flaticon.com/512/3595/3595455.png"
-    alt="Ad Banner"
-    className="w-28 h-28 object-contain"
-  />
-  <div className="text-center sm:text-left">
-    <h2 className="text-2xl font-bold mb-2">Hungry?</h2>
-    <p className="text-sm mb-4">Order now and get your food delivered fresh & fast from Techstaurant.</p>
-    <button
-      onClick={() => navigate('/')}
-      className="bg-white text-black px-4 py-2 border-2 border-white hover:bg-transparent hover:text-white transition"
-    >
-      Start Exploring
-    </button>
-  </div>
-</div></div>
+
+</div>
   
 
       {/* 🔽 Modal */}
